@@ -705,6 +705,8 @@ section {
   background: #fff;
 }
 
+
+
 .why-us .icon-box+.icon-box {
   margin-top: 50px;
 }
@@ -760,12 +762,14 @@ section {
 .welcome {
   text-align: center;
   font-weight: bold;
+  font-size: 25px;
 
 }
 
 .why-us .video-box {
   position: relative;
   text-align: justify;
+  font-size: 15px;
 }
 
 .why-us .video-box img {
@@ -773,7 +777,7 @@ section {
   padding-bottom: 15px;
 }
 
-.why-us .play-btn {
+/* .why-us .play-btn {
   width: 94px;
   height: 94px;
   background: radial-gradient(#68A4C4 50%, rgba(104, 164, 196, 0.4) 52%);
@@ -798,9 +802,9 @@ section {
   border-left: 15px solid #fff;
   z-index: 100;
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
+} */
 
-.why-us .play-btn::before {
+/* .why-us .play-btn::before {
   content: "";
   position: absolute;
   width: 120px;
@@ -821,14 +825,14 @@ section {
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
-}
+} */
 
-.why-us .play-btn:hover::after {
+/* .why-us .play-btn:hover::after {
   border-left: 15px solid #68A4C4;
   transform: scale(20);
-}
+} */
 
-.why-us .play-btn:hover::before {
+/* .why-us .play-btn:hover::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -844,7 +848,7 @@ section {
   -webkit-animation: none;
   animation: none;
   border-radius: 0;
-}
+} */
 
 @-webkit-keyframes pulsate-btn {
   0% {
@@ -871,16 +875,18 @@ section {
 }
 
 .what {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
   text-align: center;
-  font-weight: bold;
-  padding-bottom: 2%;
-  font-size: 150%;
 }
 
 /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-.features .row+.row {
+/* .features .row+.row {
   margin-top: 100px;
 }
 
@@ -906,8 +912,31 @@ section {
 
 .features p:last-child {
   margin-bottom: 0;
+} */
+@media (max-width: 576px) {  
+  .xs {color:red;font-weight:bold;}
 }
 
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width:768px) {  
+  .sm {color:red;font-weight:bold;}
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) and (max-width:992px) {  
+ .md {color:red;font-weight:bold;}
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width:1200px) { 
+ .lg {color:red;font-weight:bold;}
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    .xl {color:red;font-weight:bold;}
+}
+ 
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1236,6 +1265,7 @@ section {
   .pricing .box {
     max-width: 60%;
     margin: 0 auto 30px auto;
+    
   }
 }
 
