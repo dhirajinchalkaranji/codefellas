@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #68A4C4;
+  background: #238667;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -40,12 +40,12 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #85b6cf;
+  background: #2ead85;
   color: #fff;
 }
 
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: rgb(34 64 59);
+  background: #238667;
 }
 
 #header.header-transparent {
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #header.header-scrolled {
-  background: rgb(34 64 59);
+  background: #2cad84;
   height: 60px;
 }
 
@@ -543,31 +543,42 @@ swiper hero
 .discover__card {
   position: relative;
   width: 100%;
-  overflow: var(--img-hidden);
+  /* overflow: var(--img-hidden); */
 }
+
 .discover__container {
   margin-top: 1.5rem;
+  text-align: center;
 }
+
 .discover__data {
+  padding: 12px 266px;
+  background-color: rgba(17, 17, 17, 0.527);
+  display: flex;
   position: absolute;
-  bottom: 1.5rem;
-  left: 1rem;
+  bottom: 2.5rem;
+  /* left: 1rem; */
+  flex-direction: column;
+  align-items: center;
+
+
 }
 
 .discover__title,
 .discover__description {
-  color: var(--white-color);
+  color: white;
 
 }
 
 .discover__title {
-  font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-0-25);
+  font-size: 2rem;
+
+  /* margin-bottom: 1rem; */
 }
 
 .discover__description {
   display: block;
-  font-size: var(--smaller-font-size);
+  font-size: 1rem;
 }
 
 
@@ -970,30 +981,45 @@ section {
 .features p:last-child {
   margin-bottom: 0;
 } */
-@media (max-width: 576px) {  
-  .xs {color:red;font-weight:bold;}
+@media (max-width: 576px) {
+  .xs {
+    color: red;
+    font-weight: bold;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width:768px) {  
-  .sm {color:red;font-weight:bold;}
+@media (min-width: 576px) and (max-width:768px) {
+  .sm {
+    color: red;
+    font-weight: bold;
+  }
 }
- 
+
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) and (max-width:992px) {  
- .md {color:red;font-weight:bold;}
+@media (min-width: 768px) and (max-width:992px) {
+  .md {
+    color: red;
+    font-weight: bold;
+  }
 }
- 
+
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width:1200px) { 
- .lg {color:red;font-weight:bold;}
+@media (min-width: 992px) and (max-width:1200px) {
+  .lg {
+    color: red;
+    font-weight: bold;
+  }
 }
- 
+
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  
-    .xl {color:red;font-weight:bold;}
+@media (min-width: 1200px) {
+  .xl {
+    color: red;
+    font-weight: bold;
+  }
 }
- 
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -1322,7 +1348,7 @@ section {
   .pricing .box {
     max-width: 60%;
     margin: 0 auto 30px auto;
-    
+
   }
 }
 
@@ -2233,27 +2259,26 @@ section {
 }
 
 #footer .footer {
-  
+
   padding: 50px 0;
-  background: #0d2735
-  
+  background: #238667;
 }
 
-#footer .footer h4 {
+/* #footer .footer h4 {
   font-size: 24px;
   margin: 0 0 20px 0;
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #a2cce3;
-  
-}
+  color: #ffffff;
 
-#footer .testimonial {
+} */
+
+/* #footer .testimonial {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 /* #footer .footer-newsletter form {
   margin-top: 30px;
@@ -2290,13 +2315,13 @@ section {
 }  */
 
 #footer .footer-top {
-  background: #0d2735;
-  border-top: 1px solid #17455e;
-  border-bottom: 1px solid #123649;
-  padding: 60px 0 30px 0;
+  background: #2cad84;
+  border-top: 1.5px solid #1E4356;
+  border-bottom: 1px solid #1E4356;
+  padding: 50px 0px 0px 0px;
 }
 
-#footer-center{
+#footer-center {
   justify-content: space-evenly;
 }
 
@@ -2309,7 +2334,7 @@ section {
   margin: 0 0 20px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  color: #a2cce3;
+  color: #1E4356;
   font-weight: 600;
 }
 
@@ -2345,7 +2370,7 @@ section {
 #footer .footer-top h4 {
   font-size: 18px;
   font-weight: 600;
-  color: #a2cce3;
+  color: #1E4356;
   position: relative;
   padding-bottom: 12px;
 }
@@ -2445,13 +2470,14 @@ section {
 .swiper {
   width: 100%;
   height: 100%;
- 
+
 }
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
+  /* text-align: center; */
+
+  /* font-size: 18px; */
+  /* background: #fff; */
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -2471,6 +2497,6 @@ section {
 .swiper-slide img {
   display: block;
   width: 100%;
-  height: 85%;
+  height: 90%;
   object-fit: cover;
 }
