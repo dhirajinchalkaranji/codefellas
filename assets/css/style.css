@@ -2445,10 +2445,11 @@ section {
 
 /* dhiraj */
 
-.welcome{
+.welcome {
   margin: 1.5rem;
 }
-.welcome_content{
+
+.welcome_content {
   margin: 1.5rem;
 }
 
@@ -2515,6 +2516,12 @@ section {
   height: 90%;
   object-fit: cover;
 }
+
+
+
+
+
+
 
 /* sponsor logos */
 .sponsor-logos {
