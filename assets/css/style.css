@@ -2439,6 +2439,13 @@ section {
 
 /* dhiraj */
 
+.welcome{
+  margin: 1.5rem;
+}
+.welcome_content{
+  margin: 1.5rem;
+}
+
 .welcome_container {
   grid-template-columns: repeat(1, 1fr);
   gap: 1.5rem;
@@ -2460,6 +2467,8 @@ section {
 
 .welcome_button {
   cursor: pointer;
+  border: black;
+  margin: 10px;
 }
 
 .welcome_button :hover {
